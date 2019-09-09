@@ -12,6 +12,23 @@ $phi: 1.618033988;
 $top-nav-height: 79px;
 
 
+// Mixins
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}
+
+
 // Resets
 
 * {
@@ -53,10 +70,49 @@ body {
   width: 100%;
   
   .top-nav-wrapper {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     max-width: $max-width;
     width: 100%;
+  }
+
+  .nav-menu {
+    display: none;
+
+    &.active {
+      background: $primary-color;
+      display: block;
+      left: 0;
+      overflow: hidden;
+      padding: 20px;
+      position: absolute;
+      top: $top-nav-height;
+      width: 100%;
+
+      li {
+        margin: $phi * 1em 0;
+      }
+      
+      a {
+        color: $off-white;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    @include for-size(tablet-portrait-up) {
+      display: flex;
+   }
+  }
+
+  .toggler {
+    cursor: pointer;
+    font-size: 2em;
+
+    @include for-size(tablet-portrait-up) {
+      display: none; 
+   }
   }
 
   .brand {
@@ -103,10 +159,14 @@ body {
   margin-bottom: $phi + $phi * 1em;
 
   section {
-    background-color: $off-white;
+    background-color: rgba($off-white, 0.8);
     max-width: $max-width - ($phi * 100);
     padding: $phi * 1em;
     text-align: center;
+    
+    @include for-size(tablet-portrait-up) {
+      background-color: $off-white;
+    }
 
     h1 {
       font-size: 2em;
@@ -117,17 +177,27 @@ body {
 .wrapper {
   margin: auto;
   max-width: $max-width;
+  padding: 0 $phi * 1em;
 }
 
 .cards {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
 
+  @include for-size(tablet-portrait-up) {
+    flex-direction: row;
+  }
+
   .card {
     border: 1px solid $primary-color;
-    margin: 0 ($phi / 2) * 1em;
+    margin: ($phi / 2) * 1em 0;
     padding: ($phi / 2) * 1em;
+
+    @include for-size(tablet-portrait-up) {
+      margin: 0 ($phi / 2) * 1em;
+    }
   }
 }
 
@@ -174,7 +244,12 @@ hr {
 
 .flex {
   display: flex;
+  flex-direction: column;
   margin-bottom: $phi + $phi * 1em;
+  
+  @include for-size(tablet-portrait-up) {
+    flex-direction: row;
+  }
 
   .col {
     flex: 1;
