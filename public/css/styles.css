@@ -389,9 +389,11 @@ hr {
 .average-tuition-container .average-tuition-legend li {
   list-style-type: none; }
   .average-tuition-container .average-tuition-legend li::before {
+    color: #444140;
     content: "|";
     display: block;
     height: 10px;
+    margin-bottom: 5px;
     width: 100%;
     text-align: center;
     line-height: .9; }

@@ -298,9 +298,11 @@ hr {
       list-style-type: none;
 
       &::before {
+        color: $grey;
         content: "|";
         display: block;
         height: 10px;
+        margin-bottom: 5px;
         width: 100%;
         text-align: center;
         line-height: .9;
