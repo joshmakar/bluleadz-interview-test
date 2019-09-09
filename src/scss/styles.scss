@@ -311,6 +311,15 @@ hr {
   }
 }
 
+[data-aos="grow-right"] {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition-property: transform;
+  &.aos-animate {
+    transform: scaleX(1);
+  }
+}
+
 .footer {
   background-color: $grey;
   height: $top-nav-height;

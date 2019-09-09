@@ -4,3 +4,5 @@ const navMenu = document.getElementById('nav-menu');
 toggler.addEventListener('click', (element) => {
   navMenu.classList.toggle('active');
 });
+
+AOS.init();

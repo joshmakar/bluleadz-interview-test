@@ -398,6 +398,13 @@ hr {
     text-align: center;
     line-height: .9; }
 
+[data-aos="grow-right"] {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition-property: transform; }
+  [data-aos="grow-right"].aos-animate {
+    transform: scaleX(1); }
+
 .footer {
   background-color: #444140;
   height: 79px; }
