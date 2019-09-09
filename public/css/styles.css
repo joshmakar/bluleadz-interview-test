@@ -115,9 +115,14 @@ hr {
   margin: 3.23607em 0; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  margin-bottom: 3.23607em; }
   .flex .col {
     flex: 1;
     margin: 0 0.80902em; }
   .flex .col-wider {
     flex: 2; }
+
+.footer {
+  background-color: #444140;
+  height: 79px; }
