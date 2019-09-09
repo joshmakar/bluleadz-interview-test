@@ -29,9 +29,9 @@ body {
     justify-content: space-between;
     max-width: 1200px;
     width: 100%; }
-  .top-nav .nav-menu {
+  .top-nav ul.nav-menu {
     display: none; }
-    .top-nav .nav-menu.active {
+    .top-nav ul.nav-menu.active {
       background: #0B3954;
       display: block;
       left: 0;
@@ -40,14 +40,14 @@ body {
       position: absolute;
       top: 79px;
       width: 100%; }
-      .top-nav .nav-menu.active li {
+      .top-nav ul.nav-menu.active li {
         margin: 1.61803em 0; }
-      .top-nav .nav-menu.active a {
+      .top-nav ul.nav-menu.active a {
         color: #FAFAFA;
         text-align: center;
         width: 100%; }
     @media (min-width: 600px) {
-      .top-nav .nav-menu {
+      .top-nav ul.nav-menu {
         display: flex; } }
   .top-nav .toggler {
     cursor: pointer;
@@ -164,6 +164,237 @@ hr {
     margin: 0 0.80902em; }
   .flex .col-wider {
     flex: 2; }
+
+.average-tuition-container dl.average-tuition-graph {
+  border: 0 solid #444140;
+  border-width: 0 0 1px 1px;
+  margin-bottom: 0;
+  padding: 3.23607px 0 0.80902em 3.23607px; }
+  .average-tuition-container dl.average-tuition-graph dt {
+    background-color: #FF6663;
+    border: 1px solid #fc0500;
+    display: block;
+    font-size: .8em;
+    font-weight: 700;
+    padding: 0.80902em;
+    margin: 0 0 0.80902em; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-1 {
+      width: 1%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-2 {
+      width: 2%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-3 {
+      width: 3%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-4 {
+      width: 4%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-5 {
+      width: 5%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-6 {
+      width: 6%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-7 {
+      width: 7%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-8 {
+      width: 8%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-9 {
+      width: 9%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-10 {
+      width: 10%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-11 {
+      width: 11%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-12 {
+      width: 12%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-13 {
+      width: 13%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-14 {
+      width: 14%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-15 {
+      width: 15%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-16 {
+      width: 16%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-17 {
+      width: 17%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-18 {
+      width: 18%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-19 {
+      width: 19%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-20 {
+      width: 20%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-21 {
+      width: 21%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-22 {
+      width: 22%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-23 {
+      width: 23%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-24 {
+      width: 24%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-25 {
+      width: 25%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-26 {
+      width: 26%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-27 {
+      width: 27%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-28 {
+      width: 28%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-29 {
+      width: 29%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-30 {
+      width: 30%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-31 {
+      width: 31%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-32 {
+      width: 32%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-33 {
+      width: 33%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-34 {
+      width: 34%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-35 {
+      width: 35%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-36 {
+      width: 36%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-37 {
+      width: 37%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-38 {
+      width: 38%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-39 {
+      width: 39%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-40 {
+      width: 40%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-41 {
+      width: 41%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-42 {
+      width: 42%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-43 {
+      width: 43%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-44 {
+      width: 44%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-45 {
+      width: 45%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-46 {
+      width: 46%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-47 {
+      width: 47%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-48 {
+      width: 48%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-49 {
+      width: 49%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-50 {
+      width: 50%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-51 {
+      width: 51%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-52 {
+      width: 52%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-53 {
+      width: 53%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-54 {
+      width: 54%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-55 {
+      width: 55%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-56 {
+      width: 56%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-57 {
+      width: 57%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-58 {
+      width: 58%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-59 {
+      width: 59%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-60 {
+      width: 60%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-61 {
+      width: 61%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-62 {
+      width: 62%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-63 {
+      width: 63%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-64 {
+      width: 64%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-65 {
+      width: 65%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-66 {
+      width: 66%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-67 {
+      width: 67%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-68 {
+      width: 68%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-69 {
+      width: 69%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-70 {
+      width: 70%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-71 {
+      width: 71%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-72 {
+      width: 72%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-73 {
+      width: 73%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-74 {
+      width: 74%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-75 {
+      width: 75%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-76 {
+      width: 76%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-77 {
+      width: 77%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-78 {
+      width: 78%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-79 {
+      width: 79%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-80 {
+      width: 80%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-81 {
+      width: 81%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-82 {
+      width: 82%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-83 {
+      width: 83%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-84 {
+      width: 84%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-85 {
+      width: 85%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-86 {
+      width: 86%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-87 {
+      width: 87%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-88 {
+      width: 88%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-89 {
+      width: 89%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-90 {
+      width: 90%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-91 {
+      width: 91%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-92 {
+      width: 92%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-93 {
+      width: 93%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-94 {
+      width: 94%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-95 {
+      width: 95%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-96 {
+      width: 96%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-97 {
+      width: 97%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-98 {
+      width: 98%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-99 {
+      width: 99%; }
+    .average-tuition-container dl.average-tuition-graph dt.percentage-100 {
+      width: 100%; }
+
+.average-tuition-container .average-tuition-legend ul {
+  display: flex;
+  font-size: .75em;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
+
+.average-tuition-container .average-tuition-legend li {
+  list-style-type: none; }
+  .average-tuition-container .average-tuition-legend li::before {
+    content: "|";
+    display: block;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: .9; }
 
 .footer {
   background-color: #444140;
