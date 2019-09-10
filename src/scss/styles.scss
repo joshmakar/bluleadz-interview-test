@@ -68,6 +68,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
   
   .top-nav-wrapper {
     align-items: center;
@@ -253,7 +254,11 @@ hr {
 
   .col {
     flex: 1;
-    margin: 0 ($phi / 2) * 1em;
+    margin: 0 ($phi / 2) * 1em $phi * 1em;
+    
+    @include for-size(tablet-portrait-up) {
+      margin-bottom: 0;
+    }
   }
   .col-wider {
     flex: 2;

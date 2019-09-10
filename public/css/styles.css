@@ -22,7 +22,8 @@ body {
   padding: 0.80902em;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   .top-nav .top-nav-wrapper {
     align-items: center;
     display: flex;
@@ -161,7 +162,10 @@ hr {
       flex-direction: row; } }
   .flex .col {
     flex: 1;
-    margin: 0 0.80902em; }
+    margin: 0 0.80902em 1.61803em; }
+    @media (min-width: 600px) {
+      .flex .col {
+        margin-bottom: 0; } }
   .flex .col-wider {
     flex: 2; }
 
