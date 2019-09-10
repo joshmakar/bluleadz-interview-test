@@ -1,4 +1,6 @@
-// Variables
+/*///////////////////////////////////////////////
+Configure Variables
+///////////////////////////////////////////////*/
 
 $primary-color: #0B3954;
 $secondary-color: #FF6663;
@@ -12,7 +14,9 @@ $phi: 1.618033988;
 $top-nav-height: 79px;
 
 
-// Mixins
+/*///////////////////////////////////////////////
+Configure Mixins
+///////////////////////////////////////////////*/
 
 @mixin for-size($size) {
   @if $size == phone-only {
@@ -29,14 +33,19 @@ $top-nav-height: 79px;
 }
 
 
-// Resets
+/*///////////////////////////////////////////////
+Resets
+///////////////////////////////////////////////*/
 
 * {
   box-sizing: border-box;
 }
 
 
-// Typography
+/*///////////////////////////////////////////////
+Typography
+///////////////////////////////////////////////*/
+
 h1 {
   font-size: 1.5em;
 
@@ -47,7 +56,9 @@ h1 {
 
 
 
-// Global
+/*///////////////////////////////////////////////
+Global Styling
+///////////////////////////////////////////////*/
 
 html {
   line-height: $phi;
@@ -59,6 +70,20 @@ body {
   padding-top: $top-nav-height;
 }
 
+hr {
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  border: 0;
+  height: 1px;
+  margin: $phi + $phi * 1em 0;
+}
+
+
+/*///////////////////////////////////////////////
+Elemental Styling
+///////////////////////////////////////////////*/
+
+// Top Nav
 .top-nav {
   background-color: $off-white;
   display: flex;
@@ -148,6 +173,8 @@ body {
   }
 }
 
+
+// Hero Header
 .hero-header {
   align-items: flex-end;
   background: url('https://images.unsplash.com/photo-1547653872-052e3539decc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
@@ -175,12 +202,16 @@ body {
   }
 }
 
+
+// Content Wrapper
 .wrapper {
   margin: auto;
   max-width: $max-width;
   padding: 0 $phi * 1em;
 }
 
+
+// Cards
 .cards {
   display: flex;
   flex-direction: column;
@@ -202,6 +233,8 @@ body {
   }
 }
 
+
+// Buttons
 .btn {
   color:#ffffff;
   cursor:pointer;
@@ -235,14 +268,8 @@ body {
   }
 }
 
-hr {
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-  border: 0;
-  height: 1px;
-  margin: $phi + $phi * 1em 0;
-}
 
+// Graph Section
 .flex {
   display: flex;
   flex-direction: column;
@@ -265,6 +292,7 @@ hr {
   }
 }
 
+// Graph
 .average-tuition-container {
 
   dl.average-tuition-graph {
@@ -316,6 +344,19 @@ hr {
   }
 }
 
+
+// Footer
+.footer {
+  background-color: $grey;
+  height: $top-nav-height;
+}
+
+
+/*///////////////////////////////////////////////
+Configure Custom AOS Animations
+///////////////////////////////////////////////*/
+
+// Grow Right
 [data-aos="grow-right"] {
   transform: scaleX(0);
   transform-origin: left;
@@ -323,9 +364,4 @@ hr {
   &.aos-animate {
     transform: scaleX(1);
   }
-}
-
-.footer {
-  background-color: $grey;
-  height: $top-nav-height;
 }

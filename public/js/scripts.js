@@ -1,4 +1,6 @@
-// Top Nav Functionality
+/*///////////////////////////////////////////////
+Top Nav Functionality
+///////////////////////////////////////////////*/
 
 var toggler = document.getElementById('toggler');
 var navMenu = document.getElementById('nav-menu');
@@ -6,7 +8,12 @@ toggler.addEventListener('click', function (element) {
   navMenu.classList.toggle('active');
 });
 
-// JSON for Bar Graph
+
+/*///////////////////////////////////////////////
+Generate Bar Graph
+///////////////////////////////////////////////*/
+
+// JSON Data for Bar Graph
 var chartItem =[
   {
     label: "Public Medical School, In-State $34,592",
@@ -34,17 +41,20 @@ var chartItem =[
 function renderTuitionGraph(data) {
   const averageTuitionGraph = document.getElementById('average_tuition_graph');
   const maxCost = Math.max.apply(Math, chartItem.map(object => object.cost));
-  console.log(maxCost);
 
   data.forEach(statistic => {
     const costPercentage = Math.round((statistic.cost / maxCost) * 100);
-    console.log(costPercentage);
     const graphData = `<dt data-aos="grow-right" class="percentage-${costPercentage}" style="background-color: ${statistic.color}">${statistic.label}</dt>`;
+    
     averageTuitionGraph.innerHTML += graphData;
   });
 }
 
 renderTuitionGraph(chartItem);
 
-// Initialize Animate On Scroll
+
+/*///////////////////////////////////////////////
+Animate on Scroll
+///////////////////////////////////////////////*/
+
 AOS.init();
