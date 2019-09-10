@@ -1,3 +1,3 @@
 # BluLeadz Interview - Josh Makar
 
-[Demo](https://codepen.io/joshmakar/full/eYOMZYJ)
+[Demo](https://codepen.io/joshmakar/full/dybmKeK)
