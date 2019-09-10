@@ -275,7 +275,7 @@ hr {
     
     dt {
       background-color: $secondary-color;
-      border: 1px solid darken($secondary-color, 20%);
+      border: 1px solid $grey;
       display: block;
       font-size: .8em;
       font-weight: $weight-bold;
