@@ -1,11 +1,26 @@
+/*///////////////////////////////////////////////
+Configure Variables
+///////////////////////////////////////////////*/
+/*///////////////////////////////////////////////
+Configure Mixins
+///////////////////////////////////////////////*/
+/*///////////////////////////////////////////////
+Resets
+///////////////////////////////////////////////*/
 * {
   box-sizing: border-box; }
 
+/*///////////////////////////////////////////////
+Typography
+///////////////////////////////////////////////*/
 h1 {
   font-size: 1.5em; }
   h1:first-child {
     margin-top: 0; }
 
+/*///////////////////////////////////////////////
+Global Styling
+///////////////////////////////////////////////*/
 html {
   line-height: 1.61803; }
 
@@ -14,6 +29,16 @@ body {
   font-family: "Roboto", sans-serif;
   padding-top: 79px; }
 
+hr {
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  border: 0;
+  height: 1px;
+  margin: 3.23607em 0; }
+
+/*///////////////////////////////////////////////
+Elemental Styling
+///////////////////////////////////////////////*/
 .top-nav {
   background-color: #FAFAFA;
   display: flex;
@@ -145,13 +170,6 @@ body {
       background: linear-gradient(to bottom, #0B3954 5%, #0B3954 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$primary-color',GradientType=0);
       background-color: #0B3954; }
-
-hr {
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-  border: 0;
-  height: 1px;
-  margin: 3.23607em 0; }
 
 .flex {
   display: flex;
@@ -402,13 +420,16 @@ hr {
     text-align: center;
     line-height: .9; }
 
+.footer {
+  background-color: #444140;
+  height: 79px; }
+
+/*///////////////////////////////////////////////
+Configure Custom AOS Animations
+///////////////////////////////////////////////*/
 [data-aos="grow-right"] {
   transform: scaleX(0);
   transform-origin: left;
   transition-property: transform; }
   [data-aos="grow-right"].aos-animate {
     transform: scaleX(1); }
-
-.footer {
-  background-color: #444140;
-  height: 79px; }
